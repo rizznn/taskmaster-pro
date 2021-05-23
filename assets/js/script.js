@@ -267,8 +267,8 @@ $(".list-group").on("change", "input[type='text']", function() {
   var taskSpan = $("<span>")
     .addClass("badge badge-primary badge-pill")
     .text(date);
-    $(this).replaceWith(taskSpan);
-    auditTask($(taskSpan).closest(".list-group-item"));
+  $(this).replaceWith(taskSpan);
+  auditTask($(taskSpan).closest(".list-group-item"));
 });
 
 // remove all tasks
